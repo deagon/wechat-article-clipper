@@ -1,0 +1,14 @@
+{
+  "name": "wechat-article-clipper",
+  "version": "1.0.0",
+  "description": "Chrome extension: convert WeChat articles to Markdown",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "setup": "npm install && node scripts/build.js"
+  },
+  "devDependencies": {
+    "jszip": "^3.10.1",
+    "turndown": "^7.2.0"
+  }
+}
