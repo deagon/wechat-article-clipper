@@ -5,7 +5,6 @@
   "description": "一键将微信公众号文章转换为 Markdown 并下载到本地",
   "permissions": [
     "activeTab",
-    "downloads",
     "scripting"
   ],
   "host_permissions": [
@@ -28,8 +27,12 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://mp.weixin.qq.com/s*"],
-      "js": ["content.js"],
+      "matches": [
+        "https://mp.weixin.qq.com/s*"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_idle"
     }
   ],
